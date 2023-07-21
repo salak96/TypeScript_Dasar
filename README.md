@@ -127,7 +127,7 @@ describe ("Hello World", () => {
     });
 })
 ```
-- Jalan tescode diatas
+- Jalan tes code diatas
 ```
 npx jest
 ```
