@@ -1,3 +1,13 @@
+-----------------------------------------------------------------------------------------------------------------------------------
+## Clone repository ke komputer lain
+```
+git clone https://github.com/salak96/TypeScript_Dasar.git
+```
+## Install node modules
+```
+npm install
+```
+-----------------------------------------------------------------------------------------------------------------------------------
 # Buat folder dengan nama Belajar-typeScript-dasar Setup nodeJS
 ```
 npm init
