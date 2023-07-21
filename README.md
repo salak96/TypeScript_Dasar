@@ -1,6 +1,4 @@
----
-
-## Clone repository ke komputer lain
+# Clone repository ke komputer lain
 
 ```
 git clone https://github.com/salak96/TypeScript_Dasar.git
