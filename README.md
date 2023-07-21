@@ -110,3 +110,24 @@ npm install --save-dev @jest/globals
 ```
 npm install --save-dev @types/jest
 ```
+# Buat folder tests di root
+```
+mkdir tests
+```
+- Buat file hello.test.ts di dalam folder tests
+```
+hello.test.ts
+```
+- Buat code test contoh
+```
+describe ("Hello World", () => {
+    it("should say hello", () => { 
+        const name = "Hello Lambang";
+        expect(name).toBe("Hello Lambang");
+    });
+})
+```
+- Jalan tescode diatas
+```
+npx jest
+```
