@@ -1,20 +1,18 @@
-"use strict";
-describe("Array", () => {
-    it("should same with javaScript", () => {
-        const name = ["Sasangka", "lambang", "Kurniawan"]; // tipe data array dengan string
+'use strict';
+describe('Array', () => {
+    it('should same with javaScript', () => {
+        const name = ['Sasangka', 'lambang', 'Kurniawan']; // tipe data array dengan string
         const value = [1, 2, 3]; //  tipe data array dengan number
         console.info(name);
         console.info(value);
     });
-    it("should same readonly Array TypeScript", () => {
-        const hobbies = ["Membaca", "Menulis", "Memancing"]; // Readonlyarray tidak bisa diubah
-        console.info(hobbies); // HANYA BOLEH DI BACA                 
+    it('should same readonly Array TypeScript', () => {
+        const hobbies = ['Membaca', 'Menulis', 'Memancing']; // Readonlyarray tidak bisa diubah
+        console.info(hobbies); // HANYA BOLEH DI BACA
         //  hobbies[0] = "Main Game";       // TIDAK BISA DIUBAH ! terbaca eror di typescript
     });
-    it("should support tupple", () => {
-        const person = [
-            "Sasangka", "lambang", 1996
-        ]; // Data sudah ditentukan dan tidak bisa diubah
+    it('should support tupple', () => {
+        const person = ['Sasangka', 'lambang', 1996]; // Data sudah ditentukan dan tidak bisa diubah
         console.info(person);
         console.info(person[0]);
         console.info(person[1]);
