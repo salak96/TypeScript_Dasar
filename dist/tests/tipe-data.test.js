@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 describe('Tipe Data', () => {
     it('should must declare', () => {
         let name = 'Hello Lambang';

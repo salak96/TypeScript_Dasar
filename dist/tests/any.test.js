@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 describe('Any', () => {
     it('should support in typescript', () => {
         const person = {
@@ -6,8 +6,8 @@ describe('Any', () => {
             name: 'Sasangka',
             age: 27,
         };
-        person.age = 28;
-        person.address = 'Jakarta';
+        person.age = 28; // bisa di ganti isi data object
+        person.address = 'Jakarta'; // bisa di ganti isi data object
         console.info(person);
     });
 });
