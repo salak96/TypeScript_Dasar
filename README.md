@@ -97,12 +97,9 @@ babel.config.json
 npm install --save-dev typescript
 ```
 
--   Documentasi TypeScript
-
-```
-https://www.npmjs.com/package/typescript
-```
-
+# Documentasi TypeScript
+- https://www.npmjs.com/package/typescript
+  
 # Setup TypeScript Project
 
 ```
