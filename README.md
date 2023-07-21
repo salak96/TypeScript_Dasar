@@ -141,3 +141,38 @@ describe ("Hello World", () => {
 ```
 npx jest
 ```
+
+# Buat folder dist diroot buat memisahkan typescript
+```
+mkdir dist
+```
+
+- Ubah isi tsconfig.json 
+```
+"outDir": "dist/",/* Specify an output folder for all emitted files. */
+```
+
+# Test typescript buat ke javascipt
+``` 
+npx tsc
+```
+
+# Tambahkan iclude dan exclude di tsconfig.json diatas "CompilerOptions" mode developer
+```
+"include": [
+  "src/**/*"
+  ],
+"exclude": [
+  "tests/**/*/*"
+  ],
+```
+# Jika masih belajar maka include exclude
+```
+  "include": [
+    "src/**/*",
+    "tests/**/*"
+  ],
+  // "exclude": [
+  // "tests/**/*/*",
+  // ],
+```
