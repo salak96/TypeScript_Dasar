@@ -12,7 +12,7 @@ npm install
 
 ---
 
-# Buat folder dengan nama Belajar-typeScript-dasar Setup nodeJS
+# Setup nodeJS dari awal
 
 ```
 npm init
