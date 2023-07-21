@@ -8,7 +8,7 @@ describe('Tipe Data', () => {
         console.info(balance);
         console.info(isVip);
         //  name = 100
-        //  balance = "kanaka"      kode eror di tsc tetapi tidak eror di jest karena jest menjadikan ke javascript
+        //  balance = "kanaka"     ~~ kode eror di tsc tetapi tidak eror di jest karena jest menjadikan ke javascript ~~
         //  isVip = 111
     });
 });
