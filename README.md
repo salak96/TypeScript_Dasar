@@ -176,3 +176,15 @@ npx tsc
   // "tests/**/*/*",
   // ],
 ```
+
+# TypeScript Compiler
+
+- Untuk menjalankan TypeScript Compiler secara terus menerus
+
+```
+npx tsc--watch
+```
+- Untuk Berhenti
+```
+ctrl+C
+```
