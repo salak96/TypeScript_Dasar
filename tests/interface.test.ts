@@ -1,3 +1,4 @@
+import { Employee,Manager } from "../src/employe";
 import { Seller } from "../src/seller"
 
 describe('interface', () => {
@@ -48,5 +49,21 @@ describe('interface', () => {
         expect(disctionary.name).toBe('Sasangka');
         expect(disctionary.address).toBe('indonesia');
         console.info(disctionary);
+    })
+    // oop extends keturunan
+    it('should support extends interface', () => {
+        const employee : Employee = {
+            id: '1',
+            name: 'Sasangka',
+            division: 'developer',
+        }
+        console.info(employee);
+        const Manager : Manager = {//mempunyai interface extends employee dan menambahkan numberOfEmployees
+            id: '1',
+            name: 'Sasangka',
+            division: 'developer',
+            numberOfEmployees: 10
+        }
+        console.info(Manager);
     })
 })
