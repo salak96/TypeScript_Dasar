@@ -1,7 +1,7 @@
 describe("Type Object", () => {
     it("should support in typescript", () => {
         
-        const person:{id:string, name:string} = {
+        const person:{id:string, name:string,hobbies?:string[]} = {
             id: "1",                                //KASUS SEDERHANA 2 attribute jika 10 lebih baik pakai typealias
             name: "Sasangka"
         }

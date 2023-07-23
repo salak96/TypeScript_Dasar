@@ -5,6 +5,7 @@ describe('Type alias', () => {
         const category : Category = {
             id : 1,
             name : 'Handphone',       //HARUS ADA id & name
+            
         }
 
         const product : Product  = {
