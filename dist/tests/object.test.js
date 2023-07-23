@@ -8,6 +8,7 @@ describe("Type Object", () => {
         console.info(person);
         person.id = "2";
         person.name = "Kurniawan";
+        // person.description = "Sasangka"; EROR KARENA TIDAK ada attribute description
         console.info(person);
     });
 });
