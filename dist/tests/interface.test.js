@@ -19,5 +19,20 @@ describe('interface', () => {
         expect(add(1, 2)).toBe(3);
         console.log(add(1, 2));
     });
+    // indexable interface
+    it('should support indexable interface', () => {
+        const names = ['Sasangka', 'lambang', 'Kurniawan'];
+        console.info(names);
+    });
+    // indexable interface for object
+    it('should support indexable interface for non number index', () => {
+        const disctionary = {
+            'name': 'Sasangka',
+            'address': 'indonesia',
+        };
+        expect(disctionary.name).toBe('Sasangka');
+        expect(disctionary.address).toBe('indonesia');
+        console.info(disctionary);
+    });
 });
 export {};
