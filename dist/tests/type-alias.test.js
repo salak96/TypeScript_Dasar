@@ -8,7 +8,7 @@ describe('Type alias', () => {
             id: 2,
             name: 'Samsung',
             price: 100000,
-            category: category
+            category: category,
         };
         console.info(product);
         console.info(category);

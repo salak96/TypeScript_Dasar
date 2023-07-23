@@ -98,8 +98,9 @@ npm install --save-dev typescript
 ```
 
 # Documentasi TypeScript
-- https://www.npmjs.com/package/typescript
-  
+
+-   https://www.npmjs.com/package/typescript
+
 # Setup TypeScript Project
 
 ```
