@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 describe('function', function () {
     it('should support in typescript', function () {
         function sayHello(name) {
@@ -15,7 +15,8 @@ describe('function', function () {
         function callHello(value) {
             if (typeof value === 'string') {
                 return value.toUpperCase();
-            } else if (typeof value === 'number') {
+            }
+            else if (typeof value === 'number') {
                 return value * 10;
             }
         }

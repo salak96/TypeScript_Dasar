@@ -1,11 +1,11 @@
+"use strict";
 describe('Loop', () => {
     it('should support for loop', function () {
-        const name: string[] = ['Sasangka', 'Lambang', 'Kurniawan'];
+        const name = ['Sasangka', 'Lambang', 'Kurniawan'];
         //for
         for (let i = 0; i < name.length; i++) {
             console.info(name[i]);
         }
-
         //for of
         for (const names of name) {
             console.info(names);
@@ -17,21 +17,18 @@ describe('Loop', () => {
     });
     //while loop
     it('should support while loop', function () {
-        let counter: number = 0;
-
+        let counter = 0;
         while (counter < 10) {
             console.info(counter);
             counter++;
         }
     });
-
     //do while
     it('should support do loop', function () {
-        let counter: number = 0;
-
-        do{
+        let counter = 0;
+        do {
             console.info(counter);
             counter++;
-        }while (counter < 10)
+        } while (counter < 10);
     });
 });
