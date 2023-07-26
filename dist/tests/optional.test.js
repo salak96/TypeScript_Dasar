@@ -1,9 +1,11 @@
 describe('Optional Parameter', () => {
     it('should support null and  undefined', () => {
         function sayHello(name) {
+            //tipe data boleh null atau string, name optional
             if (name) {
                 console.log(`Hello ${name}`);
-            } else {
+            }
+            else {
                 console.log('Hello False');
             }
         }

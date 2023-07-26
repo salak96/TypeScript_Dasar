@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "format": "prettier --write .",
-        "test": "jest"
+        "test": "jest",
+        "ts": "tsc"
     },
     "jest": {
         "transform": {

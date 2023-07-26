@@ -43,6 +43,7 @@ describe('interface', () => {
         };
         console.info(employee);
         const Manager = {
+            //mempunyai interface extends employee dan menambahkan numberOfEmployees
             id: '1',
             name: 'Sasangka',
             division: 'developer',
