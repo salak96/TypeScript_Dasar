@@ -12,7 +12,7 @@ describe('function', function () {
 
         printHello('lambang');
     });
-    
+    //overloading
     it('should support function overloading', () => {
         function callHello(value: number): number;
         function callHello(value: string): string;
@@ -27,7 +27,28 @@ describe('function', function () {
         expect(callHello(10)).toBe(100);
         expect(callHello('Sasangka')).toBe('SASANGKA');
 
-        console.info(callHello(20))
+        console.info(callHello(20));
+    });
 
+    //function parameter
+    it('should function as paramater', () => {
+        function sayHello(name: string, filter: (name: string) => string): string {
+            return `Hello ${filter(name)}`;
+        }
+        //RIBET harus bkin function toUpper
+        // function toUpper(name: string):string{
+        //     return name.toUpperCase();
+        // }
+        // expect(sayHello("Lambang",toUpper)).toBe("Hello LAMBANG")
+
+        // Lebih singkat bikin function
+        expect(
+            sayHello('Lambang', function (name: string): string {
+                return name.toUpperCase();
+            }),
+        ).toBe('Hello LAMBANG');
+
+        // VERSI arrow function
+        expect(sayHello('Lambang', (name: string): string => name.toUpperCase())).toBe('Hello LAMBANG');
     });
 });
