@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 describe('Array', () => {
     it('should same with javaScript', () => {
         const name = ['Sasangka', 'lambang', 'Kurniawan']; // tipe data array dengan string

@@ -15,6 +15,22 @@ describe('If statement', () => {
     it('should support ternary operator', function () {
         const value = 80;
         const say = value > 75 ? 'Congratulation' : 'Try Again';
-        console.log(say);
+        console.info(say);
+    });
+    //switch
+    it('should support switch statement', () => {
+        function sayHello(name: string): string {
+            switch (name) {
+                case 'Lambang':
+                    return 'Halo lambang';
+                case 'Budi':
+                    return 'Halo Budi';
+                default:
+                    return 'Hallo';
+            }
+        }
+        console.info(sayHello('Lambang'));
+        console.info(sayHello('Budi'));
+        console.info(sayHello('Kurniawan'));
     });
 });

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 describe('Any', () => {
     it('should support in typescript', () => {
         const person = {
