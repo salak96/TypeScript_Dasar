@@ -3,8 +3,7 @@ describe('Optional Parameter', () => {
         function sayHello(name) {
             if (name) {
                 console.log(`Hello ${name}`);
-            }
-            else {
+            } else {
                 console.log('Hello False');
             }
         }

@@ -1,9 +1,10 @@
-export interface Employee{
+export interface Employee {
     id: string;
     name: string;
     division: string;
 }
 
-export interface Manager extends Employee{  //mempunyai interface extends employee
-    numberOfEmployees: number;          
+export interface Manager extends Employee {
+    //mempunyai interface extends employee
+    numberOfEmployees: number;
 }

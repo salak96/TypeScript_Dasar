@@ -1,4 +1,4 @@
-export interface Person{
+export interface Person {
     name: string;
-    sayHello(name:string):string;
+    sayHello(name: string): string;
 }

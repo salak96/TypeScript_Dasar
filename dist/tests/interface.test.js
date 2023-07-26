@@ -1,11 +1,11 @@
 describe('interface', () => {
-    it("should support in typescript", () => {
+    it('should support in typescript', () => {
         const seller = {
             id: 1,
             name: 'TOKO ABC',
             address: 'Jakarta',
             nib: '132344',
-            npwp: '123456789'
+            npwp: '123456789',
         };
         seller.name = 'TOKO XYZ'; // bisa di ubah
         // seller.nib = '1234567891' tidak bisa di ubah
@@ -27,8 +27,8 @@ describe('interface', () => {
     // indexable interface for object ber index
     it('should support indexable interface for non number index', () => {
         const disctionary = {
-            'name': 'Sasangka',
-            'address': 'indonesia',
+            name: 'Sasangka',
+            address: 'indonesia',
         };
         expect(disctionary.name).toBe('Sasangka');
         expect(disctionary.address).toBe('indonesia');
@@ -46,7 +46,7 @@ describe('interface', () => {
             id: '1',
             name: 'Sasangka',
             division: 'developer',
-            numberOfEmployees: 10
+            numberOfEmployees: 10,
         };
         console.info(Manager);
     });
@@ -56,21 +56,21 @@ describe('interface', () => {
             name: 'Sasangka',
             sayHello: function (name) {
                 return `Hello ${name}, my name is ${this.name}`;
-            }
+            },
         };
         console.info(person.sayHello('Kurniawan'));
     });
     it('should support extends interface', () => {
         const domain = {
-            id: "1",
-            name: "sasangla"
+            id: '1',
+            name: 'sasangla',
         };
         console.info(domain);
     });
     it('should support type assertions', () => {
         const person = {
-            name: "Sasangka",
-            age: 20
+            name: 'Sasangka',
+            age: 20,
         };
         const person2 = person;
         console.log(person2);

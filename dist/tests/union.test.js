@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 describe('union type', () => {
     it('should support in typescript', () => {
         let sample = 'Sasangka'; // tipe data union number, string, boolean
@@ -13,11 +13,9 @@ describe('union type', () => {
         function prosess(value) {
             if (typeof value === 'string') {
                 return value.toUpperCase();
-            }
-            else if (typeof value === 'number') {
+            } else if (typeof value === 'number') {
                 return value + 2;
-            }
-            else {
+            } else {
                 return !value;
             }
         }
