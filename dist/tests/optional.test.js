@@ -4,8 +4,7 @@ describe('Optional Parameter', () => {
             //tipe data boleh null atau string, name optional
             if (name) {
                 console.log(`Hello ${name}`);
-            }
-            else {
+            } else {
                 console.log('Hello False');
             }
         }
