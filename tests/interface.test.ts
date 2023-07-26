@@ -81,4 +81,22 @@ describe('interface', () => {
         }
         console.info(person.sayHello('Kurniawan'));
     })
+
+    it('should support extends interface', () => {
+        interface HasName{
+            name:string
+        }
+
+        interface HasId{
+            id:string
+        }
+
+        type Domain = HasId & HasName;
+
+        const domain :Domain = {
+            id :"1",
+            name:"sasangla"
+        }
+        console.info(domain)
+    })
 })
