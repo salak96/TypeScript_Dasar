@@ -24,7 +24,7 @@ describe('interface', () => {
         const names = ['Sasangka', 'lambang', 'Kurniawan'];
         console.info(names);
     });
-    // indexable interface for object
+    // indexable interface for object ber index
     it('should support indexable interface for non number index', () => {
         const disctionary = {
             'name': 'Sasangka',
@@ -33,6 +33,31 @@ describe('interface', () => {
         expect(disctionary.name).toBe('Sasangka');
         expect(disctionary.address).toBe('indonesia');
         console.info(disctionary);
+    });
+    // oop extends keturunan
+    it('should support extends interface', () => {
+        const employee = {
+            id: '1',
+            name: 'Sasangka',
+            division: 'developer',
+        };
+        console.info(employee);
+        const Manager = {
+            id: '1',
+            name: 'Sasangka',
+            division: 'developer',
+            numberOfEmployees: 10
+        };
+        console.info(Manager);
+    });
+    it('should support extends interface', () => {
+        const person = {
+            name: 'Sasangka',
+            sayHello: function (name) {
+                return `Hello ${name}, my name is ${this.name}`;
+            }
+        };
+        console.info(person.sayHello('Kurniawan'));
     });
 });
 export {};

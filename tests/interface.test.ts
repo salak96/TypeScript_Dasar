@@ -1,4 +1,5 @@
 import { Employee,Manager } from "../src/employe";
+import { sayHello } from "../src/say-hello";
 import { Seller } from "../src/seller"
 
 describe('interface', () => {
@@ -65,5 +66,19 @@ describe('interface', () => {
             numberOfEmployees: 10
         }
         console.info(Manager);
+    })
+    it('should support extends interface', () => {
+        interface Person{
+            name: string;
+            sayHello(name:string):string;
+        }
+
+        const person : Person = {
+            name: 'Sasangka',
+            sayHello:function(name:string):string{
+                return `Hello ${name}, my name is ${this.name}`;
+            }
+        }
+        console.info(person.sayHello('Kurniawan'));
     })
 })
