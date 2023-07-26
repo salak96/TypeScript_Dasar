@@ -34,4 +34,20 @@ describe('Loop', () => {
             counter++;
         }while (counter < 10)
     });
+
+    //break and continue
+    it('should support break and continue', function(){
+        let counter:number = 0;
+        do{
+            counter ++
+            if(counter==10){
+                break;
+            }
+            if(counter % 2==0){
+                continue;
+            }
+            console.info(counter)
+        }while(true)
+
+    })
 });
