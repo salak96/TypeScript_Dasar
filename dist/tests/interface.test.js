@@ -51,6 +51,7 @@ describe('interface', () => {
         console.info(Manager);
     });
     it('should support extends interface', () => {
+        //import Person ts
         const person = {
             name: 'Sasangka',
             sayHello: function (name) {
@@ -58,6 +59,21 @@ describe('interface', () => {
             }
         };
         console.info(person.sayHello('Kurniawan'));
+    });
+    it('should support extends interface', () => {
+        const domain = {
+            id: "1",
+            name: "sasangla"
+        };
+        console.info(domain);
+    });
+    it('should support type assertions', () => {
+        const person = {
+            name: "Sasangka",
+            age: 20
+        };
+        const person2 = person;
+        console.log(person2);
     });
 });
 export {};
